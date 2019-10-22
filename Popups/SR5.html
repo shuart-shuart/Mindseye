@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title> I miss you </title>
+        <style>
+			#container{width:200px;
+			height:200px;
+			border: 0px solid #8A3210;
+			border-radius: 5px;
+			position: fixed;
+			top: 0%;
+			left: 0%;
+			float: center;
+			}
+			img{
+			display: block;}
+        </style>
+    </head>
+	
+	<body style="font-family:courier;font-size:24px;font-style:regular;" 
+	bgcolor="#A3C7FF"
+	onload="window.resizeTo(200,230)"
+	>		
+		<div id=container onmouseover="myFunction()">
+		<img src="/Volumes/SHU THUMB 2/Uncreativity Project/SRC FILES/SR5.gif" alt="bb" height="200px" width="200px">
+		</div>
+			<script>
+				var myVar;
+				function myFunction() {
+				myVar = setInterval(openWin, 500);
+				}
+				var imy;
+				function openWin() {
+				imy = window.open("", "imy",
+				"_blank, width=100px, height=500px", "status=no,scrollbars=no, resizable=no" 
+				);
+				imy.document.write("<h1> I miss you </h1>")
+				}
+			</script>
+</html>
